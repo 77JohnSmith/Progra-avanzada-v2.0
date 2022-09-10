@@ -1,0 +1,7 @@
+﻿  Source.cpp
+C:\Users\John Smith\Desktop\Avance_2.1\Avance_2.1\Source.cpp(955,8): warning C4101: 'precio': unreferenced local variable
+C:\Users\John Smith\Desktop\Avance_2.1\Avance_2.1\Source.cpp(954,9): warning C4101: 'cantidad': unreferenced local variable
+C:\Users\John Smith\Desktop\Avance_2.1\Avance_2.1\Source.cpp(956,8): warning C4101: 'precioF': unreferenced local variable
+C:\Users\John Smith\Desktop\Avance_2.1\Avance_2.1\Source.cpp(1609,7): warning C4101: 'newNom': unreferenced local variable
+C:\Users\John Smith\Desktop\Avance_2.1\Avance_2.1\Source.cpp(1733,7): warning C4101: 'newDir': unreferenced local variable
+  Avance_2.1.vcxproj -> C:\Users\John Smith\Desktop\Avance_2.1\Debug\Avance_2.1.exe

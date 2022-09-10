@@ -1,0 +1,525 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Spanish (Mexico) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESM)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MEXICAN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_InicioSesion DIALOGEX 0, 0, 101, 160
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tienda Online"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Iniciar Sesión",IDOK1_InSes,24,120,50,14
+    PUSHBUTTON      "Salir",IDCANCEL_1,24,138,50,14
+    LTEXT           "Inicio de Sesión",IDC_ST1_InSes,18,12,50,8
+    LTEXT           "Usuario:",IDC_ST1_Us,24,24,28,8
+    LTEXT           "Contraseña:",IDC_ST1_Cont,18,60,41,8
+    EDITTEXT        IDC_EDIT1_Us,12,36,77,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT1_Cont,12,72,77,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Registrarse",IDC_BUT1_Regis,24,102,50,14
+END
+
+IDD_Registro DIALOGEX 0, 0, 155, 177
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Tienda Online"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Registrarse",IDOK2_Registrarse,36,132,50,14
+    PUSHBUTTON      "Regresar",IDCANCEL_2,36,150,50,14
+    LTEXT           "Registro",IDC_ST2_Registro,42,12,28,8
+    LTEXT           "Usuario(Obligatorio):",IDC_ST2_Us,24,36,68,8
+    LTEXT           "Contraseña(Obligatorio):",IDC_ST2_Cont,18,84,81,8
+    EDITTEXT        IDC_EDIT2_Us,18,60,84,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2_Cont,18,102,84,14,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_InfoVendedor DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tienda Online"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Actualizar",IDOK3_Actualizar,196,155,50,14
+    LTEXT           "Información del Vendedor",IDC_ST3_Info,117,23,83,8
+    LTEXT           "Nombre completo del vendedor:",IDC_ST3_Nombre,17,50,103,8
+    EDITTEXT        IDC_EDIT3_Nombre,121,48,150,14,ES_AUTOHSCROLL
+    LTEXT           "Alias de la empresa:",IDC_ST3_Alias,55,73,65,8
+    EDITTEXT        IDC_EDIT3_Alias,121,71,149,14,ES_AUTOHSCROLL
+    LTEXT           "Foto del vendedor:",IDC_ST3_Foto,38,106,62,8
+    CONTROL         "",IDC_ST3_FotoVend,"Static",SS_BITMAP,61,130,15,13,WS_EX_ACCEPTFILES
+    PUSHBUTTON      "Regresar",IDCANCEL_3,252,155,50,14
+END
+
+IDD_ProductoNuevo DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tienda Online"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Agregar nuevo producto",IDOK4_Agregar,157,155,91,14
+    PUSHBUTTON      "Cancelar",IDCANCEL_4,252,155,50,14
+    LTEXT           "Agrega un nuevo producto al inventario",IDC_ST4_Titulo,89,17,128,8
+    LTEXT           "Nombre del producto:",IDC_ST4_Nombre,51,38,70,8
+    EDITTEXT        IDC_EDIT4_Nombre,124,36,126,14,ES_AUTOHSCROLL
+    LTEXT           "Cantidad en inventario del producto:",IDC_ST4_Cant,16,63,118,8
+    EDITTEXT        IDC_EDIT4_Cant,114,60,27,14,ES_AUTOHSCROLL
+    LTEXT           "Codigo del producto:",IDC_ST4_Cod,15,87,68,8
+    EDITTEXT        IDC_EDIT4_Cod,85,84,53,14,ES_AUTOHSCROLL
+    LTEXT           "Marca del producto:",IDC_ST4_Marca,18,103,65,8
+    EDITTEXT        IDC_EDIT4_Marca,85,103,52,14,ES_AUTOHSCROLL
+    LTEXT           "Imagen del producto:",IDC_ST4_Imagen,203,59,70,8
+    CONTROL         "",IDC_ST4_FotoProd,"Static",SS_BITMAP,233,75,15,13
+    LTEXT           "Descripcion del producto:",IDC_ST4_Dscrp,184,102,82,8
+    EDITTEXT        IDC_EDIT4_Dscrp,183,112,103,29,ES_AUTOHSCROLL
+    LTEXT           "Precio del producto:",IDC_ST4_Precio,19,135,65,8
+    EDITTEXT        IDC_EDIT4_Precio,86,133,28,14,ES_AUTOHSCROLL
+END
+
+IDD_Eliminar DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TiendaOnline"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Eliminar",IDOK5_ConfElim,198,155,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancelar",IDCANCEL_5,252,155,50,14
+    EDITTEXT        IDC_EDIT5_Buscador,81,33,161,14,ES_AUTOHSCROLL
+    LTEXT           "Producto que desee eliminar:",IDC_ST5_Selec,113,17,94,8
+    PUSHBUTTON      "Buscar",IDC_BUT5_Buscar,131,56,50,14
+    LTEXT           "Codigo:",IDC_ST5_Cod,19,101,26,8
+    EDITTEXT        IDC_EDIT5_Cod,47,98,77,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Marca:",IDC_ST5_Marca,21,120,23,8
+    EDITTEXT        IDC_EDIT5_Marca,47,117,78,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Nombre:",IDC_ST5_Nom,17,83,28,8
+    EDITTEXT        IDC_EDIT5_Nom,47,80,78,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Cantidad disponible:",IDC_ST5_Cant,136,82,66,8
+    LTEXT           "Precio:",IDC_ST5_Precio,233,81,23,8
+    LTEXT           "Descripción:",IDC_ST5_Desc,136,99,40,8
+    EDITTEXT        IDC_EDIT5_Cant,202,79,24,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT5_Precio,256,79,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT5_Desc,176,97,118,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_ST5_FotoProd,"Static",SS_BITMAP,149,129,15,13
+END
+
+IDD_EditarProd DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tienda Online"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Confirmar edicion",IDOK6_ConfEd,177,155,71,14,WS_DISABLED
+    PUSHBUTTON      "Cancelar",IDCANCEL_6,252,155,50,14
+    LTEXT           "Escriba el producto que desee modificar",IDC_ST6_Selec,84,6,128,8
+    EDITTEXT        IDC_EDIT6_Buscador,84,24,139,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Buscar",IDC_BUT6_Buscar,126,48,50,14
+    LTEXT           "Nombre:",IDC_ST6_Nom,36,87,28,8
+    EDITTEXT        IDC_EDIT6_Nom,67,84,69,14,ES_AUTOHSCROLL
+    LTEXT           "Codigo:",IDC_ST6_Cod,38,105,26,8
+    EDITTEXT        IDC_EDIT6_Cod,67,102,70,14,ES_AUTOHSCROLL
+    LTEXT           "Marca:",IDC_ST6_Marca,39,123,23,8
+    EDITTEXT        IDC_EDIT6_Marca,67,120,70,14,ES_AUTOHSCROLL
+    LTEXT           "Cantidad disponible:",IDC_ST6_Cant,155,87,66,8
+    EDITTEXT        IDC_EDIT6_Cant,221,84,40,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_ST6_FotoProd,"Static",SS_BITMAP,252,132,13,11
+    LTEXT           "Descripción:",IDC_ST6_Desc,23,142,40,8
+    EDITTEXT        IDC_EDIT6_Desc,67,139,84,14,ES_AUTOHSCROLL
+    LTEXT           "Precio:",IDC_ST6_Precio,192,102,23,8
+    EDITTEXT        IDC_EDIT6_Precio,222,102,40,14,ES_AUTOHSCROLL
+END
+
+IDD_MisProductos DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tienda Online"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Regresar",IDCANCEL_7,252,155,50,14
+    LTEXT           "Mis Productos:",IDC_ST7_MisProd,25,18,48,8
+    LISTBOX         IDC_LIST7_MisProd,23,36,78,117,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Codigo:",IDC_ST7_Cod,117,62,26,8
+    EDITTEXT        IDC_EDIT7_Cod,145,59,71,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Marca:",IDC_ST7_Marca,119,81,23,8
+    EDITTEXT        IDC_EDIT7_Marca,144,78,72,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Nombre:",IDC_ST7_Nom,114,43,28,8
+    EDITTEXT        IDC_EDIT7_Nom,145,39,71,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Cantidad disponible:",IDC_ST7_Cant,116,102,66,8
+    LTEXT           "Precio:",IDC_ST7_Precio,114,120,23,8
+    LTEXT           "Descripción:",IDC_ST7_Desc,108,140,40,8
+    EDITTEXT        IDC_EDIT7_Cant,181,100,35,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT7_Precio,144,120,72,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT7_Desc,148,139,69,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_ST7_FotoProd,"Static",SS_BITMAP,246,50,15,13
+END
+
+IDD_MisEnvios DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tienda Online"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Mis envios:",IDC_ST11_Tit,30,19,36,8
+    LISTBOX         IDC_LIST11_ME,27,33,83,123,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Nombre:",IDC_ST11_Nom,143,25,28,8
+    LTEXT           "Ciudad:",IDC_ST11_Ciud,147,126,26,8
+    EDITTEXT        IDC_EDIT11_Ciud,175,124,59,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Fecha de envío:",IDC_ST11_Fecha,119,61,52,8
+    LTEXT           "Estatus:",IDC_ST11_Status,144,78,28,8
+    LTEXT           "Cantidad:",IDC_ST11_Cant,137,42,32,8
+    LTEXT           "Calle:",IDC_ST11_Calle,153,94,19,8
+    LTEXT           "Colonia:",IDC_ST11_Col,145,111,27,8
+    LTEXT           "Estado:",IDC_ST11_Est,147,143,26,8
+    EDITTEXT        IDC_EDIT11_Nom,175,22,94,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT11_Cant,175,40,23,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT11_FEcha,175,59,53,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT11_Status,175,75,76,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT11_Calle,175,92,95,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT11_Col,175,108,94,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT11_ESt,176,140,58,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_ComProd DIALOGEX 0, 0, 386, 190
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tienda Online"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Continuar",IDOK8_Cont,276,168,49,14
+    PUSHBUTTON      "Cancelar",IDCANCEL_8,330,168,50,14
+    LTEXT           "Seleccione los productos que desee comprar",IDC_ST8_Selec,210,6,142,8
+    LTEXT           "Cantidad:",IDC_ST8_Cant,156,30,32,8
+    EDITTEXT        IDC_EDIT8_Cant,192,30,30,14,ES_AUTOHSCROLL
+    LTEXT           "Precio total:",IDC_ST8_Precio,270,30,40,8
+    EDITTEXT        IDC_EDIT8_Precio,312,30,39,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Calle:",IDC_ST8_Calle,168,60,19,8
+    EDITTEXT        IDC_EDIT8_Calle,192,60,56,14,ES_AUTOHSCROLL
+    LTEXT           "Colonia:",IDC_ST8_Dire,282,60,27,8
+    EDITTEXT        IDC_EDIT8_Dire,312,60,63,14,ES_AUTOHSCROLL
+    LTEXT           "Ciudad:",IDC_ST8_Ciud,162,90,26,8
+    EDITTEXT        IDC_EDIT8_Ciud,192,90,54,14,ES_AUTOHSCROLL
+    LTEXT           "Estado:",IDC_ST8_Est,282,90,26,8
+    EDITTEXT        IDC_EDIT8_Est,312,90,62,14,ES_AUTOHSCROLL
+    LTEXT           "Mensaje:",IDC_ST8_Mens,144,120,30,8
+    LTEXT           "Fecha de envio:",IDC_ST8_Fecha,126,144,52,8
+    CONTROL         "",IDC_DATETIMEPICKER8,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,192,144,180,15
+    EDITTEXT        IDC_EDIT8_Mens,192,120,177,16,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST8_Prod,6,18,108,144,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_Cancelacion DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tienda Online"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Eliminar",IDOK9_Cont,198,155,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancelar",IDCANCEL_9,252,155,50,14
+    LTEXT           "Nombre del producto a cancelar:",IDC_ST9_Selec,105,17,105,8
+    EDITTEXT        IDC_EDIT9_Buscador,72,30,167,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Buscar",IDC_BUT9_Buscar,129,49,50,14
+    LTEXT           "Calle:",IDC_ST9_Calle,175,74,19,8
+    LTEXT           "Colonia:",IDC_ST9_Col,169,93,27,8
+    LTEXT           "Ciudad:",IDC_ST9_Ciud,170,113,26,8
+    LTEXT           "Estado:",IDC_ST9_Est,170,132,26,8
+    LTEXT           "Fecha de envio:",IDC_ST9_Fecha,11,131,52,8
+    LTEXT           "Nombre:",IDC_ST9_Nom,35,72,28,8
+    LTEXT           "Cantidad:",IDC_ST9_Cant,31,92,32,8
+    LTEXT           "Precio:",IDC_ST9_Prec,40,111,23,8
+    EDITTEXT        IDC_EDIT9_nom,66,69,86,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT9_cant,66,89,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT9_Prec,66,108,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT9_Fecha,66,128,70,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT9_Calle,197,71,87,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT9_Col,198,90,86,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT9_Ciud,198,110,86,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT9_Est,198,129,87,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Estatus:",IDC_ST9_Status,36,149,28,8
+    EDITTEXT        IDC_EDIT9_Status,66,147,68,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_EditEnv DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tienda Online"
+MENU IDR_MENU1
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Actualizar",IDOK10_Cont,198,155,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancelar",IDCANCEL_10,252,155,50,14
+    LTEXT           "Seleccione el envio al que desee actualizar la dirección.",IDC_ST10_Selec,71,17,176,8
+    EDITTEXT        IDC_EDIT10_Buscador,37,32,171,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Buscar",IDC_BUT10_Buscar,219,32,50,14
+    LTEXT           "Cantidad:",IDC_ST10_Cant,32,74,32,8
+    LTEXT           "Nombre:",IDC_ST10_Nom,36,58,28,8
+    LTEXT           "Precio total:",IDC_ST10_Precio,25,92,40,8
+    LTEXT           "Calle:",IDC_ST10_Calle,176,59,19,8
+    LTEXT           "Colonia:",IDC_ST10_Col,169,81,27,8
+    LTEXT           "Ciudad:",IDC_ST10_Ciud,171,102,26,8
+    LTEXT           "Estado:",IDC_ST10_Est,172,122,26,8
+    LTEXT           "Fecha de envío:",IDC_ST10_Fecha,13,126,52,8
+    LTEXT           "Estatus:",IDC_ST10_Status,37,144,28,8
+    EDITTEXT        IDC_EDIT10_Nom,67,54,69,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT10_cant,67,71,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT10_Precio,68,89,40,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT10_Fecha,67,124,62,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT10_Status,67,141,87,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT10_Calle,198,57,91,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10_Col,197,79,92,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10_Ciud,197,100,92,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10_Est,197,121,92,14,ES_AUTOHSCROLL
+    LTEXT           "Mensaje:",IDC_ST10_Men,33,108,30,8
+    EDITTEXT        IDC_EDIT10_Mens,67,107,88,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_InicioSesion, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 94
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 153
+    END
+
+    IDD_Registro, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 148
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_InfoVendedor, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_ProductoNuevo, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_Eliminar, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_EditarProd, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_MisProductos, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_MisEnvios, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 156
+    END
+
+    IDD_ComProd, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 379
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+
+    IDD_Cancelacion, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_EditEnv, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_InicioSesion AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_Registro AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_InfoVendedor AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ProductoNuevo AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_Eliminar AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EditarProd AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_MisProductos AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_MisEnvios AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ComProd AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_Cancelacion AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EditEnv AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU
+BEGIN
+    POPUP "Perfil"
+    BEGIN
+        MENUITEM "Informacion del vendedor",    ID_PERFIL_INFORMACIONDELVENDEDOR
+    END
+    POPUP "Productos"
+    BEGIN
+        MENUITEM "Agregar nuevo producto",      ID_PRODUCTOS_AGREGARNUEVOPRODUCTO
+        MENUITEM "Eliminar un producto",        ID_PRODUCTOS_ELIMINARUNPRODUCTO
+        MENUITEM "Editar un producto",          ID_PRODUCTOS_EDITARUNPRODUCTO
+        MENUITEM "Mis productos",               ID_PRODUCTOS_MISPRODUCTOS
+    END
+    POPUP "Envios"
+    BEGIN
+        MENUITEM "Comprar productos",           ID_ENVIOS_COMPRARPRODUCTOS
+        MENUITEM "Cancelar un envio",           ID_ENVIOS_CANCELARUNENVIO
+        MENUITEM "Editar un envio",             ID_ENVIOS_EDITARUNENVIO
+        MENUITEM "Mis Envios",                  ID_ENVIOS_MISENVIOS
+    END
+    POPUP "Salir"
+    BEGIN
+        MENUITEM "Salir del programa",          ID_SALIR_SALIRDELPROGRAMA
+    END
+END
+
+#endif    // Spanish (Mexico) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
